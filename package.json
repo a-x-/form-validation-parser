@@ -1,0 +1,25 @@
+{
+  "name": "form-validation-parser",
+  "version": "0.0.0",
+  "description": "PHP parser for html5 form validation declaration. Make possible basing php server-side addition validation on the already existing client-side html5 form validation declaration.",
+  "main": "form-validation-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/a-x-/form-validation-parser.git"
+  },
+  "keywords": [
+    "html5",
+    "php",
+    "validation",
+    "parser"
+  ],
+  "author": "Invntrm",
+  "license": "AGPL-3",
+  "bugs": {
+    "url": "https://github.com/a-x-/form-validation-parser/issues"
+  },
+  "homepage": "https://github.com/a-x-/form-validation-parser"
+}
