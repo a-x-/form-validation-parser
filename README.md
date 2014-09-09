@@ -72,6 +72,8 @@ Idea process.
         - [xpath lib tutorial (Russian)](http://vasinnet.blogspot.ru/2013/04/nodejs-html-xml-xpath.html),
         - [htmlparser2](https://www.npmjs.org/package/htmlparser2) — HTML/XML/RSS parser **for Node.js**,
         - [node-htmlparser](https://github.com/tautologistics/node-htmlparser) — HTML/XML/RSS parser written in JS for **both the browser and NodeJS**.
+        - [dom parsers benchmarks](http://habrahabr.ru/post/163979/).
+        - [question on stackoverflow](http://stackoverflow.com/questions/7372972/how-do-i-parse-a-html-page-with-node-js).
 
 # Demo
 
