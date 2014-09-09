@@ -1,27 +1,6 @@
 module.exports.parse = (function () {
 
-    var $d = require('cheerio'),
-        fs = require('fs'),
-        _ = require('lodash'),
-        $ = _.chain;
-
-    _.mixin({pluckDeep: function (object, selector) {
-        var pluckDeep = require('pluck-deep');
-        return pluckDeep(object, selector);
-    }});
-
-    _.mixin({pluckCollection: function (array, propCollection) {
-
-    }});
-
-//    $h2 = $.load('<h2 class="title">Hello world</h2>');
-//
-//    $h2('h2.title').text('Hello there!');
-//    $h2('h2').addClass('welcome');
-//
-//    console.log($h2.html());
-
-//    var html = fs.readFileSync('./test.html');
+    var $d = require('cheerio')
     return function (html) {
         var $html = $d.load(html),
             $formsCollection = $html('form');
@@ -53,7 +32,9 @@ module.exports.parse = (function () {
             });
         });
         return formsStructs;
-//    console.log(JSON.stringify(formsStructs));
+    }
+}());
+
 
 // Try FP:
 //        $formsCollection = $($html('form'));
@@ -86,5 +67,3 @@ module.exports.parse = (function () {
 ////    };
 ////    console.log(raw);
 ////    console.log(JSON.stringify(raw));
-    }
-}());
