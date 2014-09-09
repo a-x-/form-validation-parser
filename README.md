@@ -55,11 +55,11 @@ return  the structure:
 
 # Status
 
-Idea process.
+First limited pre-alpha version complete!
 
 | **Idea** | Alpha | Beta | RC | Production |
 |:--------:|:-----:|:----:|:--:|:----------:|
-|  Pending |   —   |  —   |  — |      —     |
+|  Ok      |Pending|  —   |  — |      —     |
 
 
 # Dependencies
@@ -80,7 +80,7 @@ Idea process.
 # TODO
 
 * Make possible parsing array form items such as: `user[email]`, `user[address][street]`, etc.`
-* Implement polymorphic endpoints.
+* Implement polymorphic endpoints (hrm... what i would said?).
 * Check for identity default value for disabled and hiden fields. Add no strict mode for ignoring this checking.
 
 # License
