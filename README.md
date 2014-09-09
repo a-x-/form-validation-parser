@@ -20,7 +20,7 @@ For example, Parsing the html code
 ...
 ```
 
-return structure:
+return  the structure:
 
 ```js
 {
@@ -79,7 +79,7 @@ Idea process.
 
 # TODO
 
-* Make possible parsing array form items such as: `user[email]`, `user[name]`, `user[address][street]`, etc.`
+* Make possible parsing array form items such as: `user[email]`, `user[address][street]`, etc.`
 * Implement polymorphic endpoints.
 * Check for identity default value for disabled and hiden fields. Add no strict mode for ignoring this checking.
 
