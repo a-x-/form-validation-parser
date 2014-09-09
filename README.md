@@ -64,7 +64,14 @@ Idea process.
 
 # Dependencies
 
-There are noting.
+* [Cheerio](https://github.com/cheeriojs/cheerio) for DOM parsing.
+    + See about
+        - [page](http://cheeriojs.github.io/cheerio/),
+        - [tutorial (Russian)](http://catethysis.ru/cheerio-node-js/).
+    + Another ways:
+        - [xpath lib tutorial (Russian)](http://vasinnet.blogspot.ru/2013/04/nodejs-html-xml-xpath.html),
+        - [htmlparser2](https://www.npmjs.org/package/htmlparser2) — HTML/XML/RSS parser **for Node.js**,
+        - [node-htmlparser](https://github.com/tautologistics/node-htmlparser) — HTML/XML/RSS parser written in JS for **both the browser and NodeJS**.
 
 # Demo
 
