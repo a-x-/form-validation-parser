@@ -11,10 +11,10 @@ For example, Parsing the html code
 ```html
 ...
 <form name="my-data" action="...">
-  <input type="text" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}" data-type="ip" title="127.0.0.1" name="user_ip" />
-  <input type="email" title="me@best-mail.io" name="user_email" required />
-  <input type="text" pattern="#\d+" name="the-system-id" title="#312" />
-  <input type="number" min="2" name="magic-foo" />
+    <input type="text" pattern="\d{1,3}\.\d{1,3}\.\d{1,3}" data-type="ip" title="127.0.0.1" name="user_ip" />
+    <input type="email" title="me@best-mail.io" name="user_email" required />
+    <input type="text" pattern="#\d+" name="the-system-id" title="#312" />
+    <input type="number" min="2" name="magic-foo" />
   <button >Submit</button>
 </form>
 ...
@@ -24,35 +24,31 @@ return structure:
 
 ```js
 {
-
-  "my-data": {
-  
-    "required": {
-      "user_email": {
-        "type": "email" // It is standart HTML5 type.
-        "sample": "me@best-mail.io"
-      }
-    },
-    
-    "optional": {
-      // Pattern provide base validation only ad hoc. Type definition provide full validation layer.
-      "user_ip": {
-        "type": "ip", // It is not HTML5 standart type, which must be defined additionally
-        "sample": "127.0.0.1"
-      },
-      "the-system-id": {
-        "pattern": "#\d+", // There is (full validation qualified) pattern only.
-        "sample": "#312"
-      },
-      "magic-foo": {
-        "type": "number",
-        "sample": "",
-        "params": {"min":2}
-      }
-    }
-    
-  }
-  
+    "my-data": {
+        "required": {
+            "user_email": {
+                "type": "email",    // It is standart HTML5 type.
+                "sample": "me@best-mail.io"
+            }
+        },
+        
+        "optional": {
+            // Pattern provide base validation only ad hoc. Type definition provide full validation layer.
+            "user_ip": {
+                "type": "ip",         // It is not HTML5 standart type, which must be defined additionally
+                "sample": "127.0.0.1"
+            },
+            "the-system-id": {
+                "pattern": "#\d+",    // There is (full validation qualified) pattern only.
+                "sample": "#312"
+            },
+            "magic-foo": {
+                "type": "number",
+                "sample": "",
+                "params": {"min":2}
+            }
+        } // optional
+    } // my-data
 }
 ```
 
