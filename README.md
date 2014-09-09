@@ -22,7 +22,7 @@ For example, Parsing the html code
 
 return structure:
 
-```json
+```js
 {
 
   "my-data": {
@@ -30,8 +30,7 @@ return structure:
     "required": {
       "user_email": {
         "type": "email" // It is standart HTML5 type.
-        "sample": "me@best-mail.io",
-        "isRequired": true // Email field is required
+        "sample": "me@best-mail.io"
       }
     },
     
@@ -39,19 +38,16 @@ return structure:
       // Pattern provide base validation only ad hoc. Type definition provide full validation layer.
       "user_ip": {
         "type": "ip", // It is not HTML5 standart type, which must be defined additionally
-        "sample": "127.0.0.1",
-        "isRequired": false
+        "sample": "127.0.0.1"
       },
       "the-system-id": {
         "pattern": "#\d+", // There is (full validation qualified) pattern only.
-        "sample": "#312",
-        "isRequired": false
+        "sample": "#312"
       },
       "magic-foo": {
         "type": "number",
         "sample": "",
-        "params": {"min":2},
-        "isRequired": false
+        "params": {"min":2}
       }
     }
     
@@ -78,7 +74,7 @@ There are noting.
 
 # TODO
 
-* Make possible parsing array form items such as: `user[email], user[ip], user[name], user[address][street], etc.`
+* Make possible parsing array form items such as: `user[email]`, `user[name]`, `user[address][street]`, etc.`
 * Implement polymorphic endpoints.
 * Check for identity default value for disabled and hiden fields. Add no strict mode for ignoring this checking.
 
