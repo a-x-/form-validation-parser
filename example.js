@@ -4,11 +4,12 @@
  */
 var
     fs = require('fs'),
-    parser = require('./form-validation-parser').parse;
+    Parser = require('./form-validation-parser'),
+    html = fs.readFileSync('sample.html'),
+    parser = Parser(html).parse
+    ;
 
-var html = fs.readFileSync('sample.html');
-
-console.log(JSON.stringify(parser(html)));
+console.log(JSON.stringify(parser()));
 /*
  ->
  {"my-data":{

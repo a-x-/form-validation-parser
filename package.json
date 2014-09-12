@@ -24,6 +24,7 @@
   "homepage": "https://github.com/a-x-/form-validation-parser",
   "dependencies": {
     "lodash": "~2.4.1",
-    "pluck-deep": "~0.2.2"
+    "pluck-deep": "~0.2.2",
+    "string-format-js": "~0.1.1"
   }
 }
